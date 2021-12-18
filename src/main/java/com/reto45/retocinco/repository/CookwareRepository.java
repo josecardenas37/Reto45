@@ -38,7 +38,9 @@ public class CookwareRepository {
     }
 
     public List<Cookware> getByPrice(double price) {
-        return accesoryCrudRepository.findByPrice(price);
+        //return accesoryCrudRepository.findByPrice(price);
+        return accesoryCrudRepository.findByPriceLessThanEqual(price);
+
 
     }
 

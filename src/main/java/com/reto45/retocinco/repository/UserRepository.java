@@ -14,6 +14,9 @@ import java.util.Optional;
 @Repository
 public class UserRepository {
 
+    /**
+     * instancia el usercrud
+     */
     @Autowired
     private UserCrudRepository userCrudRepository;
 
@@ -21,7 +24,6 @@ public class UserRepository {
      *
      * @return Lista de usuarios
      */
-
     public List<User> getAll() {
         return userCrudRepository.findAll();
     }
